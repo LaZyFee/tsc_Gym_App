@@ -2,9 +2,12 @@ import { useEffect, useState } from "react";
 import Navbar from "@/Components/Header/Navbar";
 import { SelectedPage } from "@/Shared/types";
 import Home from "@/Components/Home/Home";
+import Benefits from "./Components/Benefits/Benefits";
+import OurClasses from "./Components/OurClasses/OurClasses";
+import ContactUs from "./Components/ContactUs/ContactUs";
+import Footer from "./Components/Footer/Footer";
 
-// import useMediaQuery from "@/hooks/useMediaQuery";
-// import ActionButton from "@/Shared/ActionButton";
+
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(
     SelectedPage.Home // initial value
@@ -29,14 +32,11 @@ function App() {
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
       />
-
       <Home setSelectedPage={setSelectedPage} />
-
-      {/*
       <Benefits setSelectedPage={setSelectedPage} />
       <OurClasses setSelectedPage={setSelectedPage} />
       <ContactUs setSelectedPage={setSelectedPage} />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }

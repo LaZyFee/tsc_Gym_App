@@ -38,12 +38,12 @@ const Home = ({ setSelectedPage }: Props) => {
               visible: { opacity: 1, x: 0 },
             }}
           >
-            <div className="relative">
+            <div className="relative w-full">
               {/* EvolveText positioned absolutely behind HomePageText */}
               <img
                 src={EvolveText}
                 alt="Evolve Text"
-                className="hidden md:block absolute -top-14 -left-0 -z-20"
+                className="hidden md:block absolute md:-top-8 lg:-top-14 -left-0 -z-20"
               />
 
               {/* HomePageText displayed normally */}
