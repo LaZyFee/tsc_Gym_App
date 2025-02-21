@@ -32,6 +32,29 @@
   --screen-lg: 1440px;
 }
 
+:root {
+  --evolvetext: url("/assets/EvolveText.png");
+}
+
+.before-bg-evolvetext {
+  position: relative; /* Ensure it has a relative position */
+}
+
+.before-bg-evolvetext::before {
+  content: "";
+  position: absolute;
+  top: -5rem;
+  left: -5rem;
+  z-index: -1;
+  width: 200px; /* Adjust width */
+  height: 200px; /* Adjust height */
+  background-image: var(--evolvetext);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+}
+
 /* :root {
   --font-doto: "Doto", sans-serif;
   --font-sans: "DM Sans", sans-serif;
